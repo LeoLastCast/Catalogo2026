@@ -120,8 +120,6 @@ section { padding-block: 40px 8px; }
 .card .cat { color: var(--muted); font-size: .8rem; }
 .card:hover { border-color: var(--accent); }
 .note { color: var(--muted); font-size: .85rem; margin-top: 12px; }
-.custom { margin-top: 14px; padding: 12px 14px; border: 1.5px solid var(--accent); border-radius: 10px; background: var(--surface); }
-.custom b { display: block; font-family: var(--display); font-size: 1.15rem; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-text); }
 
 /* Producto aparte */
 .split { display: grid; gap: 14px; margin-top: 16px; }
@@ -185,7 +183,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="Last Cast, inicio"><img src="img/logo.jpg" alt="" width="34" height="34"><b>Last Cast</b></a>
+    <a class="brand" href="#inicio" aria-label="Last Cast, inicio"><img src="logo.jpg" alt="" width="34" height="34"><b>Last Cast</b></a>
     <nav class="nav" aria-label="Secciones">
       <a href="#disenos">Diseños</a><a href="#chombas">Chombas</a><a href="#gorras">Gorras</a><a href="#talles">Talles</a><a href="#pagos">Pagos</a>
     </nav>
@@ -194,13 +192,13 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
 
 <main class="wrap" id="inicio">
   <div class="hero">
-    <img src="img/hero.jpg" alt="Remeras Last Cast colgadas en una cabaña de pesca">
+    <img src="hero.jpg" alt="Remeras Last Cast colgadas en una cabaña de pesca">
     <div class="hero-in">
       <div class="eyebrow" style="color:#f58a2f">Catálogo 2026 · Edición limitada</div>
       <h1>Fish more.<br><em>Live wilder.</em></h1>
       <p>Remeras, buzos canguro, chombas y gorras con diseños exclusivos de pesca. Envíos a todo el país.</p>
       <div class="hero-cta">
-        <a class="btn" href="#disenos">Ver los 38 diseños</a>
+        <a class="btn" href="#disenos">Ver los 40 diseños</a>
         <a class="btn ghost" href="#como">Cómo comprar</a>
       </div>
     </div>
@@ -210,8 +208,8 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
 
   <section id="precios" style="padding-top:28px">
     <div class="prices">
-      <div class="price"><span>Remera</span><strong>$35.000</strong><small>4 colores · diseño atrás o adelante</small></div>
-      <div class="price"><span>Buzo canguro</span><strong>$50.000</strong><small>3 colores · diseño atrás o adelante</small></div>
+      <div class="price"><span>Remera</span><strong>$35.000</strong><small>4 colores</small></div>
+      <div class="price"><span>Buzo canguro</span><strong>$50.000</strong><small>3 colores</small></div>
       <div class="price"><span>Chomba bordada</span><strong>$45.000</strong><small>3 colores</small></div>
       <div class="price"><span>Gorra</span><strong>$25.000</strong><small>21 combinaciones</small></div>
     </div>
@@ -221,7 +219,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     <div class="eyebrow">Cómo comprar</div>
     <h2>Cuatro pasos</h2>
     <ol class="steps">
-      <li><div><b>Elegí el diseño</b><span>Tocá el que te guste en la grilla. Todos están como remera y como buzo, con el diseño atrás o adelante, como prefieras.</span></div></li>
+      <li><div><b>Elegí el diseño</b><span>Tocá el que te guste en la grilla. Todos están como remera y como buzo.</span></div></li>
       <li><div><b>Prenda y color</b><span>Remera en blanco, gris claro, gris oscuro o negro. Buzo en negro, blanco o gris.</span></div></li>
       <li><div><b>Talle y cantidad</b><span>Mirá la guía de talles más abajo. Si dudás entre dos, elegí el más grande.</span></div></li>
       <li><div><b>Enviá el pedido</b><span>Se arma el mensaje solo y lo mandás por WhatsApp. Te confirmamos y coordinamos el pago.</span></div></li>
@@ -230,9 +228,8 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
 
   <section id="disenos">
     <div class="eyebrow">Remeras y buzos</div>
-    <h2>38 diseños exclusivos</h2>
+    <h2>37 diseños exclusivos</h2>
     <p class="lead">Elegí el número de diseño. El mismo estampado va en remera o buzo, en el color que prefieras. Las remeras son 100% algodón premium.</p>
-    <div class="custom"><b>Diseño personalizable</b>En remeras y buzos podés elegir si el diseño va atrás o adelante. Aclaralo al hacer el pedido.</div>
     <div class="chips" id="filters" role="group" aria-label="Filtrar diseños"></div>
     <div class="grid" id="grid"></div>
     <p class="note">Las imágenes son ilustrativas. El color y el tamaño pueden variar según el stock disponible.</p>
@@ -242,7 +239,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     <div class="eyebrow">Bordadas</div>
     <h2>Chombas de piqué</h2>
     <div class="split">
-      <img src="img/chombas.jpg" alt="Chombas de piqué bordadas Last Cast en azul marino, gris claro y negro" loading="lazy">
+      <img src="chombas.jpg" alt="Chombas de piqué bordadas Last Cast en azul marino, gris claro y negro" loading="lazy">
       <div class="panel">
         <div class="price" style="background:none;border:0;padding:0"><span>Precio por chomba</span><strong>$45.000</strong></div>
         <div>
@@ -260,8 +257,8 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     <h2>Gorras</h2>
     <div class="split">
       <div style="display:grid;gap:14px">
-        <img src="img/gorras-vintage.jpg" alt="Gorras Vintage gastadas en 9 combinaciones de color y logo" loading="lazy">
-        <img src="img/gorras-street.jpg" alt="Gorras Streetwear en 6 colores con 2 opciones de logo cada una" loading="lazy">
+        <img src="gorras-vintage.jpg" alt="Gorras Vintage gastadas en 9 combinaciones de color y logo" loading="lazy">
+        <img src="gorras-street.jpg" alt="Gorras Streetwear en 6 colores con 2 opciones de logo cada una" loading="lazy">
       </div>
       <div class="panel">
         <div class="price" style="background:none;border:0;padding:0"><span>Precio por gorra</span><strong>$25.000</strong></div>
@@ -315,10 +312,16 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     <div class="pay">
       <div><b>Billetera virtual</b><span>Transferencia desde cualquier billetera virtual.</span></div>
       <div><b>Transferencia bancaria</b><span>De banco a banco.</span></div>
-      <div><b>Tarjeta de débito o crédito</b><span>Con cualquier tarjeta, sin recargo.</span></div>
+      <div><b>Tarjeta de débito o crédito</b><span>Consultanos las opciones de pago disponibles.</span></div>
       <div><b>Efectivo</b><span>Te generamos un link de pago para abonar en efectivo.</span></div>
       <div><b>Envíos a todo el país</b><span>Gratis llevando 2 remeras y/o buzos. No incluye gorras.</span></div>
       <div><b>Cambios dentro de los 30 días</b><span>Escribinos por WhatsApp o Instagram y contanos el motivo del cambio.</span></div>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Prenda</th><th>Precio</th></tr></thead>
+        <tbody id="payTbl"></tbody>
+      </table>
     </div>
   </section>
 
@@ -354,9 +357,9 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     "Vintage gastadas": ["Arena, logo chocolate", "Arena, logo naranja", "Verde, logo naranja", "Verde, logo verde oscuro", "Salmón, logo naranja", "Marrón, logo naranja", "Marrón, logo marrón oscuro", "Gris oscura, logo negro", "Gris oscura, logo naranja"],
     "Streetwear": ["Arena, logo naranja", "Arena, logo marrón", "Gris oscura, logo naranja", "Gris oscura, logo gris claro", "Rosa, logo naranja", "Rosa, logo arena", "Verde oscuro, logo verde oscuro", "Verde oscuro, logo naranja", "Azul, logo naranja", "Azul, logo celeste claro", "Verde militar, logo naranja", "Verde militar, logo arena"]
   };
-  var CATS = [["Peces", 18], ["Moscas", 14], ["Pescadores", 5], ["Logo", 1]];
+  var CATS = [["Peces", 17], ["Moscas", 14], ["Pescadores", 5], ["Logo", 1], ["Nuevos diseños", 3]];
   var designs = [], n = 0;
-  CATS.forEach(function (c) { for (var i = 0; i < c[1]; i++) { n++; designs.push({ n: n, cat: c[0], img: "img/d" + (n < 10 ? "0" : "") + n + ".jpg" }); } });
+  CATS.forEach(function (c) { for (var i = 0; i < c[1]; i++) { n++; designs.push({ n: n, cat: c[0], img: "d" + (n < 10 ? "0" : "") + n + ".jpg" }); } });
 
   function $(id) { return document.getElementById(id); }
   function money(v) { return "$" + String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
@@ -407,7 +410,7 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
   var sel = null;
   function openPick(d, trigger) {
     lastFocus = trigger;
-    sel = { d: d, prenda: "remera", color: 0, talle: -1, qty: 1 };
+    sel = { d: d, prenda: "remera", color: 0, talle: -1, qty: 1, ubicacion: "Espalda" };
     drawPick();
   }
   function opts(list, cur, fn, withSw) {
@@ -420,8 +423,9 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
   function drawPick() {
     var s = sel, d = s.d, pr = s.prenda;
     show('<div class="sh-head"><h3 id="shTitle">Diseño ' + pad(d.n) + '</h3><button class="x" type="button" id="cl" aria-label="Cerrar">×</button></div>' +
-      '<div class="sh-prev"><img src="' + d.img + '" alt="Diseño ' + pad(d.n) + '"><div><div class="sh-price">' + money(P[pr]) + '</div><p class="note" style="margin:4px 0 0">Normalmente lleva el diseño en la espalda y el logo Last Cast chico adelante, pero podés personalizarlo y pedirlo atrás o adelante. En la foto se ve en un solo color; podés pedirlo en cualquiera de los disponibles.</p></div></div>' +
+      '<div class="sh-prev"><img src="' + d.img + '" alt="Diseño ' + pad(d.n) + '"><div><div class="sh-price">' + money(P[pr]) + '</div><p class="note" style="margin:4px 0 0">Diseño personalizable: elegí si querés la estampa en el frente o en la espalda. La ubicación del logo puede coordinarse al hacer el pedido.</p></div></div>' +
       '<div><span class="lab">Prenda</span><div class="opts">' + opts([["Remera"], ["Buzo canguro"]], pr === "remera" ? 0 : 1, "p", false) + '</div></div>' +
+      '<div><span class="lab">Ubicación del diseño</span><div class="opts">' + opts([["Espalda"], ["Frente"]], s.ubicacion === "Espalda" ? 0 : 1, "u", false) + '</div><p class="note">Elegí dónde querés que vaya el diseño: frente o espalda.</p></div>' +
       '<div><span class="lab">Color</span><div class="opts">' + opts(COLORS[pr], s.color, "c", true) + '</div></div>' +
       '<div><span class="lab">Talle</span><div class="opts">' + opts(TALLES[pr].map(function (t) { return [t]; }), s.talle, "t", false) + '</div></div>' +
       '<div><span class="lab">Cantidad</span><div class="qty"><button type="button" id="qm" aria-label="Quitar uno">−</button><output id="qv">' + s.qty + '</output><button type="button" id="qp" aria-label="Sumar uno">+</button></div></div>' +
@@ -429,13 +433,14 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     var sh = $("sheet");
     $("cl").onclick = closeSheet;
     sh.querySelectorAll("[data-p]").forEach(function (b) { b.onclick = function () { s.prenda = b.dataset.p === "0" ? "remera" : "buzo"; s.color = 0; s.talle = -1; drawPick(); }; });
+    sh.querySelectorAll("[data-u]").forEach(function (b) { b.onclick = function () { s.ubicacion = b.dataset.u === "0" ? "Espalda" : "Frente"; drawPick(); }; });
     sh.querySelectorAll("[data-c]").forEach(function (b) { b.onclick = function () { s.color = +b.dataset.c; drawPick(); }; });
     sh.querySelectorAll("[data-t]").forEach(function (b) { b.onclick = function () { s.talle = +b.dataset.t; drawPick(); }; });
     $("qm").onclick = function () { if (s.qty > 1) { s.qty--; drawPick(); } };
     $("qp").onclick = function () { if (s.qty < 20) { s.qty++; drawPick(); } };
     $("add").onclick = function () {
       if (s.talle < 0) return;
-      var item = { n: d.n, img: d.img, prenda: pr, color: COLORS[pr][s.color][0], talle: TALLES[pr][s.talle], qty: s.qty };
+      var item = { n: d.n, img: d.img, prenda: pr, color: COLORS[pr][s.color][0], talle: TALLES[pr][s.talle], qty: s.qty, ubicacion: s.ubicacion };
       var ex = cart.filter(function (i) { return i.n === item.n && i.prenda === item.prenda && i.color === item.color && i.talle === item.talle; })[0];
       if (ex) ex.qty += item.qty; else cart.push(item);
       updateBar(); openCart();
@@ -447,15 +452,15 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
     var c = 0; cart.forEach(function (i) { c += i.qty; });
     var free = c >= 2, sub = total();
     var lines = cart.map(function (i, k) {
-      return '<div class="line"><img src="' + i.img + '" alt=""><div><b>Diseño ' + pad(i.n) + " · " + (i.prenda === "buzo" ? "Buzo" : "Remera") + '</b><small>' + i.color + " · Talle " + i.talle + " · x" + i.qty + '</small><button class="rm" type="button" data-rm="' + k + '">Quitar</button></div><strong>' + money(i.qty * P[i.prenda]) + "</strong></div>";
+      return '<div class="line"><img src="' + i.img + '" alt=""><div><b>Diseño ' + pad(i.n) + " · " + (i.prenda === "buzo" ? "Buzo" : "Remera") + '</b><small>' + i.color + " · Diseño en " + (i.ubicacion || "Espalda").toLowerCase() + " · Talle " + i.talle + " · x" + i.qty + '</small><button class="rm" type="button" data-rm="' + k + '">Quitar</button></div><strong>' + money(i.qty * P[i.prenda]) + "</strong></div>";
     }).join("");
     var msg = "Hola! Quiero hacer este pedido de Last Cast:\n" + cart.map(function (i) {
-      return "- Diseño " + pad(i.n) + ", " + (i.prenda === "buzo" ? "buzo canguro" : "remera") + ", " + i.color.toLowerCase() + ", talle " + i.talle + ", x" + i.qty;
-    }).join("\n") + "\nTotal: " + money(sub) + (free ? " (envío gratis)" : " (más envío)") + "\nUbicación del diseño (atrás o adelante): \nMi forma de pago: ";
+      return "- Diseño " + pad(i.n) + ", " + (i.prenda === "buzo" ? "buzo canguro" : "remera") + ", " + i.color.toLowerCase() + ", diseño en " + (i.ubicacion || "Espalda").toLowerCase() + ", talle " + i.talle + ", x" + i.qty;
+    }).join("\n") + "\nTotal: " + money(sub) + (free ? " (envío gratis)" : " (más envío)") + "\nMi forma de pago: ";
     show('<div class="sh-head"><h3 id="shTitle">Tu pedido</h3><button class="x" type="button" id="cl" aria-label="Cerrar">×</button></div>' +
       "<div>" + lines + "</div>" +
       '<div class="ship' + (free ? " ok" : "") + '">' + (free ? "Tenés envío gratis." : "Sumá 1 remera o buzo más y el envío es gratis.") + "</div>" +
-      '<div class="sum"><div class="tot"><span>Total</span><span>' + money(sub) + "</span></div></div>" +
+      '<div class="sum"><div class="tot"><span>Total</span><span>' + money(sub) + '</span></div><div><span>Con tarjeta de crédito (+10%)</span><span>' + money(sub * 1.1) + "</span></div></div>" +
       '<a class="btn wa block" target="_blank" rel="noopener" href="' + wa(msg) + '">Enviar pedido por WhatsApp</a>' +
       '<button class="btn ghost block" type="button" id="more">Seguir eligiendo</button>');
     $("cl").onclick = closeSheet; $("more").onclick = closeSheet;
@@ -487,6 +492,11 @@ footer { margin-top: 28px; padding-block: 20px; color: var(--muted); font-size: 
   }
   $("tR").onclick = function () { tab(true); }; $("tB").onclick = function () { tab(false); };
 
+  /* Pagos */
+  $("payTbl").innerHTML = [["Remera", "remera"], ["Buzo canguro", "buzo"], ["Chomba bordada", "chomba"], ["Gorra", "gorra"]].map(function (r) {
+    return "<tr><td>" + r[0] + "</td><td>" + money(P[r[1]]) + "</td></tr>";
+  }).join("");
+  document.querySelectorAll("#payTbl td:first-child").forEach(function (td) { td.style.fontSize = "1rem"; });
 
   /* Contacto */
   $("contactBtn").href = wa("Hola! Vi el catálogo 2026 de Last Cast y quiero consultar por ");
